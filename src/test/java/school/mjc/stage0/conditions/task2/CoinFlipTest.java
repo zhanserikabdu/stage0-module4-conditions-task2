@@ -11,9 +11,18 @@ class CoinFlipTest extends BaseIOTest {
     void throwCoinPrintsEagleIfLessThan501() {
         CoinFlip flip = new CoinFlip();
 
-        flip.throwCoin(500);
+        flip.throwCoin(499);
 
         assertEquals("Eagle\n", updateLineSpliterators(outContent.toString()));
+    }
+
+    @Test
+    void throwCoinPrintsEagleIfMiddle() {
+        CoinFlip flip = new CoinFlip();
+
+        flip.throwCoin(500);
+
+        assertEquals("Tail\n", updateLineSpliterators(outContent.toString()));
     }
 
     @Test
