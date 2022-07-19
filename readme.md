@@ -13,7 +13,7 @@ snippet:
 
 #### 2. Coin flip.
 Implement the program which will consume 1 number in method arguments and if the number is less than 500
-print "Eagle" otherwise "Tail(range of numbers is [1-1000] no checks for that required):
+print "Eagle" otherwise "Tail" (range of numbers is [1-1000], no checks for that required):
 
 
     public class CoinFlip {
